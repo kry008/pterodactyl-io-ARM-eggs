@@ -2,9 +2,9 @@
 Custom eggs for [pterodactyl.io](https://pterodactyl.io). 
 Some of them work on ARM and also ARM form Oracle Free Tier
 
-| Service | file* | AMD64 | ARM64 | ARM Oracle | More info |
-|--|--|--|--|--|--|
-| ExpressJS | [express-js-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/nodejs/express-js-egg.json) | ✅ | ✅ | ✅ | 
+| Service | file* | AMD64 | ARM64 | ARM Oracle | Category | More info |
+|--|--|--|--|--|--|--|
+| ExpressJS | [express-js-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/nodejs/expressjs/express-js-egg.json) | ✅ | ✅ | ✅ | NodeJS | - |
 
 *Right click and click save  
 ✅ - Working (Normal ARM was tested on Raspberry Pi)  
