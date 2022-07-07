@@ -1,0 +1,33 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2022-07-07T10:53:05+02:00",
+    "name": "ExpressJS",
+    "author": "koding.for.all@gmail.com",
+    "description": "ExpressJS egg, for web server based on NodeJS.\r\n\r\nThis egg use default files from:\r\nhttps:\/\/github.com\/kry008\/pterodactyl-io-ARM-eggs\/tree\/main\/demo-files\/expressjs",
+    "features": null,
+    "docker_images": {
+        "ghcr.io\/parkervcp\/yolks:nodejs_17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "ghcr.io\/parkervcp\/yolks:nodejs_16": "ghcr.io\/parkervcp\/yolks:nodejs_16",
+        "ghcr.io\/parkervcp\/yolks:nodejs_15": "ghcr.io\/parkervcp\/yolks:nodejs_15"
+    },
+    "file_denylist": [],
+    "startup": "export PORT={{SERVER_PORT}} && npm i && npm start",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"App started\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git curl jq file unzip make gcc g++ python python-dev libtool wget\r\n\r\nls\r\n\r\ncd \/home\/container\r\nwget https:\/\/raw.githubusercontent.com\/kry008\/pterodactyl-io-ARM-eggs\/main\/demo-files\/expressjs\/index.js\r\nwget https:\/\/raw.githubusercontent.com\/kry008\/pterodactyl-io-ARM-eggs\/main\/demo-files\/expressjs\/package.json\r\n\r\n\r\necho -e \"install complete\"\r\nexit 0",
+            "container": "node:14-buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": []
+}
