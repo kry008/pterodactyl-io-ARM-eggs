@@ -24,7 +24,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git curl jq file unzip make gcc g++ python python-dev libtool wget\r\n\r\nls\r\n\r\ncd \/home\/container\r\nwget https:\/\/raw.githubusercontent.com\/kry008\/pterodactyl-io-ARM-eggs\/main\/demo-files\/expressjs\/index.js\r\nwget https:\/\/raw.githubusercontent.com\/kry008\/pterodactyl-io-ARM-eggs\/main\/demo-files\/expressjs\/package.json\r\n\r\n\r\necho -e \"install complete\"\r\nexit 0",
+            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git curl jq file unzip make gcc g++ python python-dev libtool\r\n\r\n\r\ncd \/mnt\/server\r\ncurl https:\/\/raw.githubusercontent.com\/kry008\/pterodactyl-io-ARM-eggs\/main\/demo-files\/expressjs\/index.js --output index.js\r\ncurl https:\/\/raw.githubusercontent.com\/kry008\/pterodactyl-io-ARM-eggs\/main\/demo-files\/expressjs\/package.json --output package.json\r\n\r\necho -e \"install complete\"\r\n\r\n\r\nexit 0",
             "container": "node:14-buster-slim",
             "entrypoint": "bash"
         }
