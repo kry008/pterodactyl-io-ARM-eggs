@@ -6,6 +6,7 @@ Some of them work on ARM and also ARM form Oracle Free Tier
 |--|--|--|--|--|--|--|
 | [ExpressJS](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/nodejs/expressjs) | [express-js-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/nodejs/expressjs/express-js-egg.json) | ✅ | ✅ | ✅ | NodeJS | - |
 | [TeamSpeak3](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/voice/Teamspeak3-ARM) | [teamspeak3-server-arm64-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/voice/Teamspeak3-ARM/teamspeak3-server-arm64-egg.json) | ❌ | ❔[^1] | ✅ | Voice Server | - |
+| [Visual Studio Code Server](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code) | [visual-studio-code-server-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code-server/visual-studio-code-server-egg.json) | ✅ | ❔[^1] | ✅ | Voice Server | - |
 
 *Right click and click save  
 ✅ - Working (Normal ARM was tested on Raspberry Pi)  
