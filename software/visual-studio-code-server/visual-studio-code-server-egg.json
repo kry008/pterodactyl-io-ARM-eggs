@@ -7,7 +7,7 @@
     "exported_at": "2022-07-08T14:37:19+02:00",
     "name": "Visual Studio Code Server",
     "author": "mario.franze@gmail.com",
-    "description": "Run VS Code on any machine anywhere and access it in the browser.",
+    "description": "Run VS Code on any machine anywhere and access it in the browser.\r\nEgg from: parkervcp",
     "features": null,
     "docker_images": {
         "ghcr.io\/parkervcp\/yolks:nodejs_17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
