@@ -35,11 +35,9 @@ body:
       label: Link to app/game how to install
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: The processor architectures it is SURE to run on
   - type: checkboxes
     attributes:
+      label: The processor architectures it is SURE to run on
       options:
       - label: ARM64
       - label: ARM32
