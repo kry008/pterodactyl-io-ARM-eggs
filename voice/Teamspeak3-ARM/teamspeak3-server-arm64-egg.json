@@ -7,7 +7,7 @@
     "exported_at": "2022-07-08T13:59:29+02:00",
     "name": "Teamspeak3 Server ARM64",
     "author": "josdekurk@gmail.com",
-    "description": "VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.",
+    "description": "VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.\r\nAuthor: Quinten",
     "features": null,
     "docker_images": {
         "quintenqvd\/pterodactyl_images:box64": "quintenqvd\/pterodactyl_images:box64"
