@@ -9,6 +9,7 @@ Some of them work on ARM and also ARM form Oracle Free Tier
 | [Visual Studio Code Server](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code) | [visual-studio-code-server-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code-server/visual-studio-code-server-egg.json) | ✅ | ❔[^1] | ✅ | Software/Coding | - |
 | [Uptime Kuma](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma) | [uptime-kuma-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma/uptime-kuma-egg.json) | ✅ | ✅ | ✅ | Software/Monitoring | - |
 
+
 *Right click and click save  
 ✅ - Working (Normal ARM was tested on Raspberry Pi)  
 ❔- Not tested yet but should work  
