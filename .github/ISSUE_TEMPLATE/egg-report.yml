@@ -6,8 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-      Have you tried delete and install again?  
-      Make sure there are no existing bug reports by searching the [repository issues](https://github.com/kry008/pterodactyl-io-ARM-eggs/labels/bug)
+        Have you tried delete and install again?  
+        Make sure there are no existing bug reports by searching the [repository issues](https://github.com/kry008/pterodactyl-io-ARM-eggs/labels/bug)
   - type: input
     id: Egg link
     attributes:
