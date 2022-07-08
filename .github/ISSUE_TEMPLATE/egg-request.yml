@@ -4,12 +4,13 @@ title: "[New]:"
 labels: ["new egg", "documentation", "egg"]
 body:
   - type: markdown
-    value: |
-      You can use this form when you have a new game or application and would like to add. You will need information such as: 
-      1. What application? 
-      1. Link to documentation.
-      1. Is this app from the Staem store. 
-      1. Does it work on Linux and ARM64.
+    attributes:
+      value: |
+        You can use this form when you have a new game or application and would like to add. You will need information such as: 
+        1. What application? 
+        1. Link to documentation.
+        1. Is this app from the Staem store. 
+        1. Does it work on Linux and ARM64.
   - type: input
     id: name
     attributes:
