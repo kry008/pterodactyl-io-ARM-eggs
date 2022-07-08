@@ -1,0 +1,32 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2022-07-08T16:54:25+02:00",
+    "name": "Uptime Kuma",
+    "author": "koding.for.all@gmail.com",
+    "description": "A fancy self-hosted monitoring tool\r\nAuthor: kry008",
+    "features": null,
+    "docker_images": {
+        "ghcr.io\/parkervcp\/yolks:nodejs_17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "ghcr.io\/parkervcp\/yolks:nodejs_16": "ghcr.io\/parkervcp\/yolks:nodejs_16"
+    },
+    "file_denylist": [],
+    "startup": "cd uptime-kuma && export PORT={{SERVER_PORT}} && node server\/server.js",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"App started\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git curl jq file unzip make gcc g++ python python-dev libtool\r\n\r\ncd \/mnt\/server\r\ngit clone https:\/\/github.com\/louislam\/uptime-kuma.git\r\ncd uptime-kuma\r\nnpm run setup\r\n\r\necho -e \"install complete\"\r\n\r\n\r\nexit 0",
+            "container": "node:14-buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": []
+}
