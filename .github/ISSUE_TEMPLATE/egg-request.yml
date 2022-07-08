@@ -36,7 +36,8 @@ body:
     validations:
       required: true
   - type: markdown
-    value: The processor architectures it is SURE to run on
+    attributes:
+      value: The processor architectures it is SURE to run on
   - type: checkboxes
     attributes:
       options:
