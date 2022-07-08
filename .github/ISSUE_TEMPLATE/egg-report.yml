@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Have you tried delete and install again?  
+        Have you tried to delete and install again?  
         Make sure there are no existing bug reports by searching the [repository issues](https://github.com/kry008/pterodactyl-io-ARM-eggs/labels/bug)
   - type: input
     id: egg-link
@@ -42,7 +42,7 @@ body:
   - type: input
     id: other-arch
     attributes:
-      label: If you choose Other in previus
+      label: If you choose Other in previous
     validations:
       required: false
   - type: dropdown
