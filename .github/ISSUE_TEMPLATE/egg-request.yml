@@ -15,25 +15,25 @@ body:
     id: name
     attributes:
       label: App/Game name
-    validation:
+    validations:
       required: true
   - type: input
     id: link-app
     attributes:
       label: Link to app/game
-    validation:
+    validations:
       required: true
   - type: input
     id: link-wiki
     attributes:
       label: Link to app/game wiki
-    validation:
+    validations:
       required: true
   - type: input
     id: link-install
     attributes:
       label: Link to app/game how to install
-    validation:
+    validations:
       required: true
   - type: markdown
     value: The processor architectures it is SURE to run on
