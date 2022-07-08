@@ -22,8 +22,8 @@ body:
       label: Is this problem NOT mention in Known issue in that egg?
       description: All eggs have info about known problems
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     validations:
       required: true
   - type: dropdown
