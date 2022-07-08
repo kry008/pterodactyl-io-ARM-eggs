@@ -6,10 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
+        ## Make sure that this game isn't requested by someone else or is pending in Pull Request
         You can use this form when you have a new game or application and would like to add. You will need information such as: 
         1. What application? 
         1. Link to documentation.
-        1. Is this app from the Staem store. 
+        1. Is this app from the Steam store. 
         1. Does it work on Linux and ARM64.
   - type: input
     id: name
