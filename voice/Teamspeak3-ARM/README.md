@@ -1,4 +1,7 @@
-# TeamSpeak3
+# TeamSpeak3  
+
+## Thanks to - [@QuintenQVD0](https://github.com/QuintenQVD0)  
+
 ## Requirements
 1. 3 ports
     1. default_voice_port - The port used for connection, the main port
@@ -16,5 +19,3 @@ You have to set up correctly ports
 ## Known bugs
 This egg DON'T WORK ON AMD64
 
-
-## Thanks to - [@QuintenQVD0](https://github.com/QuintenQVD0)

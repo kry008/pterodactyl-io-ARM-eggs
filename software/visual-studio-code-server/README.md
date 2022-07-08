@@ -1,4 +1,7 @@
-# Visual Studio Code Server
+# Visual Studio Code Server  
+
+## Thanks to - [@QuintenQVD0](https://github.com/QuintenQVD0) and [@parkervcp](https://github.com/parkervcp)  
+
 ## Requirements
 1. minimum 1 port, suggested 2
     * If you want to create something that can be accessed from the internet then you need correspondingly more ports
@@ -15,5 +18,3 @@ You can use in VS Code console `npm` and `node`
 ## Known bugs
 Works only on 64bit CPU
 
-
-## Thanks to - [@QuintenQVD0](https://github.com/QuintenQVD0) and [@parkervcp](https://github.com/parkervcp)
