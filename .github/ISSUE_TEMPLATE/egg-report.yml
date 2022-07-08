@@ -17,7 +17,7 @@ body:
       validations:
         required: true
   - type: dropdown
-    id: newProblem
+    id: new-problem
     attributes:
       label: Is this problem NOT mention in Known issue in that egg?
       description: All eggs have info about known problems
@@ -40,13 +40,13 @@ body:
     validations:
       required: true
   - type: input
-    id: otherArch
+    id: other-arch
     attributes:
       label: If you choose Other in previus
       validations:
         required: false
   - type: input
-    id: Egg link
+    id: egg-link
     attributes:
       label: Link to egg from this repo
       description: https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/nodejs/expressjs
@@ -54,7 +54,7 @@ body:
       validations:
         required: true
   - type: dropdown
-    id: archWorking
+    id: arch-working
     attributes:
       label: In main Readme.MD this egg should work? (is architecture ✅?)
       description: All eggs have info about known problems
