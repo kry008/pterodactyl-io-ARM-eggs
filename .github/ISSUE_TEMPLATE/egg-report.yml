@@ -45,14 +45,6 @@ body:
       label: If you choose Other in previus
     validations:
       required: false
-  - type: input
-    id: egg-link
-    attributes:
-      label: Link to egg from this repo
-      description: https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/nodejs/expressjs
-      placeholder: https://github.com/kry008/pterodactyl-io-ARM-eggs/.../...
-    validations:
-      required: true
   - type: dropdown
     id: arch-working
     attributes:
