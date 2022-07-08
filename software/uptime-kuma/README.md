@@ -1,4 +1,4 @@
-# Uptime Kuma  
+# (Uptime Kuma)[https://github.com/louislam/uptime-kuma]  
 
 ## Requirements
 1. 1 port
@@ -7,7 +7,7 @@
 1. Disk space: minimmum 250 MB
 
 ## What is it
-Code is a cross-platform text editor developed by Microsoft, built on the Electron framework.
+A fancy self-hosted monitoring tool
 
 ## Special notes
 The more watched pages/services, the more bandwidth the server uses
