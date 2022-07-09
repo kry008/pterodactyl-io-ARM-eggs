@@ -9,6 +9,7 @@ Some of them work on ARM and also ARM form Oracle Free Tier
 | [Visual Studio Code Server](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/visual-studio-code) | [visual-studio-code-server-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code-server/visual-studio-code-server-egg.json) | ✅ | ❔[^1] | ✅ | Software/Coding | - |
 | [Uptime Kuma](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/uptime-kuma) | [uptime-kuma-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma/uptime-kuma-egg.json) | ✅ | ✅ | ✅ | Software/Monitoring | - |
 | [Etherpad](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/etherpad) | [etherpad-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/etherpad/etherpad-egg.json) | ✅ | ✅ | ✅ | Software/Documents | __Slow first run__ |
+| [Terraria Vanilla](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/games/terraria-vanilla) | [terraria-vanilla-ARM64-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/games/terraria-vanilla/terraria-vanilla-ARM64-egg.json) | ❌ | ✅ | ✅ | Game | - |
 
 
 *Right click and click save  
