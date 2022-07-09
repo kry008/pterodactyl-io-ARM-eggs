@@ -1,5 +1,5 @@
 # pterodactyl-io-ARM-eggs
-Custom eggs for [pterodactyl.io](https://pterodactyl.io). 
+Custom eggs for [pterodactyl.io](https://pterodactyl.io).  
 Some of them work on ARM and also ARM form Oracle Free Tier
 
 | Service | file* | AMD64 | ARM64 | ARM Oracle | Category | More info |
@@ -8,6 +8,7 @@ Some of them work on ARM and also ARM form Oracle Free Tier
 | [TeamSpeak3](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/voice/Teamspeak3-ARM) | [teamspeak3-server-arm64-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/voice/Teamspeak3-ARM/teamspeak3-server-arm64-egg.json) | ❌ | ❔[^1] | ✅ | Voice Server | - |
 | [Visual Studio Code Server](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code) | [visual-studio-code-server-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code-server/visual-studio-code-server-egg.json) | ✅ | ❔[^1] | ✅ | Software/Coding | - |
 | [Uptime Kuma](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma) | [uptime-kuma-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma/uptime-kuma-egg.json) | ✅ | ✅ | ✅ | Software/Monitoring | - |
+| [Etherpad](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/etherpad) | [etherpad-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/etherpad/etherpad-egg.json) | ✅ | ✅ | ✅ | Software/Documents | __Slow first run__ |
 
 
 *Right click and click save  

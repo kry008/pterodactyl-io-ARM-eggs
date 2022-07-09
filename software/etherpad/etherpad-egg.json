@@ -1,0 +1,54 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2022-07-09T15:15:50+02:00",
+    "name": "Etherpad",
+    "author": "kontakt@kodingwww.ml",
+    "description": "Etherpad is a highly customizable open source online editor providing collaborative editing in really real-time.\r\nAuthor: kry008",
+    "features": null,
+    "docker_images": {
+        "ghcr.io\/parkervcp\/yolks:nodejs_14": "ghcr.io\/parkervcp\/yolks:nodejs_14",
+        "ghcr.io\/parkervcp\/yolks:nodejs_17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "ghcr.io\/parkervcp\/yolks:nodejs_16": "ghcr.io\/parkervcp\/yolks:nodejs_16"
+    },
+    "file_denylist": [],
+    "startup": "cd etherpad-lite\/src\/bin && export PORT={{SERVER_PORT}} && .\/run.sh",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"Etherpad is running\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git curl jq file unzip make gcc g++ python python-dev libtool\r\n\r\ncd \/mnt\/server\r\ngit clone --branch master https:\/\/github.com\/ether\/etherpad-lite.git\r\ncd etherpad-lite\r\nls\r\nrm settings.json\r\necho \"{\" | tee settings.json\r\necho \"    \\\"title\\\": \\\"Etherpad\\\",\" | tee -a settings.json\r\necho \"    \\\"favicon\\\": null,\" | tee -a settings.json\r\necho \"    \\\"skinName\\\": \\\"colibris\\\",\" | tee -a settings.json\r\necho \"    \\\"skinVariants\\\": \\\"super-light-toolbar super-light-editor light-background\\\",\" | tee -a settings.json\r\necho \"    \\\"ip\\\": \\\"0.0.0.0\\\",\" | tee -a settings.json\r\necho \"    \\\"port\\\": ${SERVER_PORT},\" | tee -a settings.json\r\necho \"    \\\"showSettingsInAdminPage\\\": true,\" | tee -a settings.json\r\necho \"    \\\"dbType\\\": \\\"dirty\\\",\" | tee -a settings.json\r\necho \"    \\\"dbSettings\\\": {\" | tee -a settings.json\r\necho \"      \\\"filename\\\": \\\"var\/dirty.db\\\"\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"defaultPadText\\\" : \\\"Welcome to Etherpad!\\n\\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\\n\\nYou are using this on PterodactylIO server, egg made by: kry008\\n\\\",\" | tee -a settings.json\r\necho \"    \\\"padOptions\\\": {\" | tee -a settings.json\r\necho \"      \\\"noColors\\\":         false,\" | tee -a settings.json\r\necho \"      \\\"showControls\\\":     true,\" | tee -a settings.json\r\necho \"      \\\"showChat\\\":         true,\" | tee -a settings.json\r\necho \"      \\\"showLineNumbers\\\":  true,\" | tee -a settings.json\r\necho \"      \\\"useMonospaceFont\\\": false,\" | tee -a settings.json\r\necho \"      \\\"userName\\\":         false,\" | tee -a settings.json\r\necho \"      \\\"userColor\\\":        false,\" | tee -a settings.json\r\necho \"      \\\"rtl\\\":              false,\" | tee -a settings.json\r\necho \"      \\\"alwaysShowChat\\\":   false,\" | tee -a settings.json\r\necho \"      \\\"chatAndUsers\\\":     false,\" | tee -a settings.json\r\necho \"      \\\"lang\\\":             \\\"en-gb\\\"\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"padShortcutEnabled\\\" : {\" | tee -a settings.json\r\necho \"      \\\"altF9\\\":     true, \" | tee -a settings.json\r\necho \"      \\\"altC\\\":      true, \" | tee -a settings.json\r\necho \"      \\\"cmdShift2\\\": true, \" | tee -a settings.json\r\necho \"      \\\"delete\\\":    true,\" | tee -a settings.json\r\necho \"      \\\"return\\\":    true,\" | tee -a settings.json\r\necho \"      \\\"esc\\\":       true, \" | tee -a settings.json\r\necho \"      \\\"cmdS\\\":      true, \" | tee -a settings.json\r\necho \"      \\\"tab\\\":       true, \" | tee -a settings.json\r\necho \"      \\\"cmdZ\\\":      true, \" | tee -a settings.json\r\necho \"      \\\"cmdY\\\":      true, \" | tee -a settings.json\r\necho \"      \\\"cmdI\\\":      true, \" | tee -a settings.json\r\necho \"      \\\"cmdB\\\":      true, \" | tee -a settings.json\r\necho \"      \\\"cmdU\\\":      true, \" | tee -a settings.json\r\necho \"      \\\"cmd5\\\":      true, \" | tee -a settings.json\r\necho \"      \\\"cmdShiftL\\\": true, \" | tee -a settings.json\r\necho \"      \\\"cmdShiftN\\\": true, \" | tee -a settings.json\r\necho \"      \\\"cmdShift1\\\": true, \" | tee -a settings.json\r\necho \"      \\\"cmdShiftC\\\": true,\" | tee -a settings.json\r\necho \"      \\\"cmdH\\\":      true,\" | tee -a settings.json\r\necho \"      \\\"ctrlHome\\\":  true,\" | tee -a settings.json\r\necho \"      \\\"pageUp\\\":    true,\" | tee -a settings.json\r\necho \"      \\\"pageDown\\\":  true\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"suppressErrorsInPadText\\\": true,\" | tee -a settings.json\r\necho \"    \\\"requireSession\\\": false,\" | tee -a settings.json\r\necho \"    \\\"editOnly\\\": false,\" | tee -a settings.json\r\necho \"    \\\"minify\\\": true,\" | tee -a settings.json\r\necho \"    \\\"maxAge\\\": 21600,\" | tee -a settings.json\r\necho \"    \\\"abiword\\\": null,\" | tee -a settings.json\r\necho \"    \\\"soffice\\\": null,\" | tee -a settings.json\r\necho \"    \\\"tidyHtml\\\": null,\" | tee -a settings.json\r\necho \"    \\\"allowUnknownFileEnds\\\": false,\" | tee -a settings.json\r\necho \"    \\\"requireAuthentication\\\": false,\" | tee -a settings.json\r\necho \"    \\\"requireAuthorization\\\": false,\" | tee -a settings.json\r\necho \"    \\\"trustProxy\\\": false,\" | tee -a settings.json\r\necho \"    \\\"cookie\\\": {\" | tee -a settings.json\r\necho \"      \\\"sameSite\\\": \\\"Lax\\\"\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"disableIPlogging\\\": false,\" | tee -a settings.json\r\necho \"    \\\"automaticReconnectionTimeout\\\": 0,\" | tee -a settings.json\r\necho \"    \\\"scrollWhenFocusLineIsOutOfViewport\\\": {\" | tee -a settings.json\r\necho \"      \\\"percentage\\\": {\" | tee -a settings.json\r\necho \"        \\\"editionAboveViewport\\\": 0,\" | tee -a settings.json\r\necho \"        \\\"editionBelowViewport\\\": 0\" | tee -a settings.json\r\necho \"      },\" | tee -a settings.json\r\necho \"      \\\"duration\\\": 0,\" | tee -a settings.json\r\necho \"      \\\"scrollWhenCaretIsInTheLastLineOfViewport\\\": false,\" | tee -a settings.json\r\necho \"      \\\"percentageToScrollWhenUserPressesArrowUp\\\": 0\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"users\\\": {\" | tee -a settings.json\r\necho \"      \\\"${LOGIN_ETH}\\\": {\" | tee -a settings.json\r\necho \"        \\\"password\\\": \\\"${PASS_ETH}\\\",\" | tee -a settings.json\r\necho \"        \\\"is_admin\\\": true\" | tee -a settings.json\r\necho \"      }\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"socketTransportProtocols\\\" : [\\\"xhr-polling\\\", \\\"jsonp-polling\\\", \\\"htmlfile\\\"],\" | tee -a settings.json\r\necho \"  \" | tee -a settings.json\r\necho \"    \\\"socketIo\\\": {\" | tee -a settings.json\r\necho \"      \\\"maxHttpBufferSize\\\": 10000\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"loadTest\\\": false,\" | tee -a settings.json\r\necho \"    \\\"dumpOnUncleanExit\\\": false,\" | tee -a settings.json\r\necho \"    \\\"importExportRateLimiting\\\": {\" | tee -a settings.json\r\necho \"      \\\"windowMs\\\": 90000,\" | tee -a settings.json\r\necho \"      \\\"max\\\": 10\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"importMaxFileSize\\\": 26214400,\" | tee -a settings.json\r\necho \"    \\\"commitRateLimiting\\\": {\" | tee -a settings.json\r\necho \"      \\\"duration\\\": 1,\" | tee -a settings.json\r\necho \"      \\\"points\\\": 10\" | tee -a settings.json\r\necho \"    },\" | tee -a settings.json\r\necho \"    \\\"exposeVersion\\\": false,\" | tee -a settings.json\r\necho \"    \\\"loglevel\\\": \\\"INFO\\\",\" | tee -a settings.json\r\necho \"    \\\"customLocaleStrings\\\": {},\" | tee -a settings.json\r\necho \"    \\\"enableAdminUITests\\\": false\" | tee -a settings.json\r\necho \"  }\" | tee -a settings.json\r\necho \"  \" | tee -a settings.json\r\nnpm i\r\necho -e \"install complete\"\r\n\r\n\r\nexit 0",
+            "container": "node:14-buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Admin login",
+            "description": "Login for: http:\/\/IP:PORT\/admin page\r\nYou can only change it before first run!",
+            "env_variable": "LOGIN_ETH",
+            "default_value": "admin",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "Admin password",
+            "description": "Password for: http:\/\/IP:PORT\/admin page\r\nYou can only change it before first run!",
+            "env_variable": "PASS_ETH",
+            "default_value": "changeme1",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        }
+    ]
+}
