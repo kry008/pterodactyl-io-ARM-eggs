@@ -6,9 +6,9 @@ Some of them work on ARM and also ARM form Oracle Free Tier
 |--|--|--|--|--|--|--|
 | [ExpressJS](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/nodejs/expressjs) | [express-js-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/nodejs/expressjs/express-js-egg.json) | ✅ | ✅ | ✅ | NodeJS | - |
 | [TeamSpeak3](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/voice/Teamspeak3-ARM) | [teamspeak3-server-arm64-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/voice/Teamspeak3-ARM/teamspeak3-server-arm64-egg.json) | ❌ | ❔[^1] | ✅ | Voice Server | - |
-| [Visual Studio Code Server](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code) | [visual-studio-code-server-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code-server/visual-studio-code-server-egg.json) | ✅ | ❔[^1] | ✅ | Software/Coding | - |
-| [Uptime Kuma](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma) | [uptime-kuma-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma/uptime-kuma-egg.json) | ✅ | ✅ | ✅ | Software/Monitoring | - |
-| [Etherpad](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/etherpad) | [etherpad-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/etherpad/etherpad-egg.json) | ✅ | ✅ | ✅ | Software/Documents | __Slow first run__ |
+| [Visual Studio Code Server](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/visual-studio-code) | [visual-studio-code-server-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/visual-studio-code-server/visual-studio-code-server-egg.json) | ✅ | ❔[^1] | ✅ | Software/Coding | - |
+| [Uptime Kuma](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/uptime-kuma) | [uptime-kuma-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma/uptime-kuma-egg.json) | ✅ | ✅ | ✅ | Software/Monitoring | - |
+| [Etherpad](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/etherpad) | [etherpad-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/etherpad/etherpad-egg.json) | ✅ | ✅ | ✅ | Software/Documents | __Slow first run__ |
 
 
 *Right click and click save  
