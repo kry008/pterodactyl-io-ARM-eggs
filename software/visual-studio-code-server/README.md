@@ -7,6 +7,7 @@
     * If you want to create something that can be accessed from the internet then you need correspondingly more ports
 1. __Minimum 300 MB RAM__
     * If you want more plugins, you will need more RAM
+    * If you want to make some NodeJS app you will need more than 500 MB RAM
 1. Disk space: depending on the size of files, minimmum 500 MB
 
 ## What is it
