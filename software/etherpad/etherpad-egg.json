@@ -10,9 +10,9 @@
     "description": "Etherpad is a highly customizable open source online editor providing collaborative editing in really real-time.\r\nAuthor: kry008",
     "features": null,
     "docker_images": {
-        "ghcr.io\/parkervcp\/yolks:nodejs_14": "ghcr.io\/parkervcp\/yolks:nodejs_14",
-        "ghcr.io\/parkervcp\/yolks:nodejs_17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
-        "ghcr.io\/parkervcp\/yolks:nodejs_16": "ghcr.io\/parkervcp\/yolks:nodejs_16"
+        "NodeJS 14": "ghcr.io\/parkervcp\/yolks:nodejs_14",
+        "NodeJS 17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "NodeJS 16": "ghcr.io\/parkervcp\/yolks:nodejs_16"
     },
     "file_denylist": [],
     "startup": "cd etherpad-lite\/src\/bin && export PORT={{SERVER_PORT}} && .\/run.sh",

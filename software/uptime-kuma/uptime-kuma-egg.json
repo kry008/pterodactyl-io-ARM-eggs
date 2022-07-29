@@ -10,8 +10,8 @@
     "description": "A fancy self-hosted monitoring tool\r\nAuthor: kry008",
     "features": null,
     "docker_images": {
-        "ghcr.io\/parkervcp\/yolks:nodejs_17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
-        "ghcr.io\/parkervcp\/yolks:nodejs_16": "ghcr.io\/parkervcp\/yolks:nodejs_16"
+        "NodeJS 17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "NodeJS 16": "ghcr.io\/parkervcp\/yolks:nodejs_16"
     },
     "file_denylist": [],
     "startup": "cd uptime-kuma && export PORT={{SERVER_PORT}} && node server\/server.js",
