@@ -10,9 +10,9 @@
     "description": "Run VS Code on any machine anywhere and access it in the browser.\r\nEgg from: parkervcp",
     "features": null,
     "docker_images": {
-        "ghcr.io\/parkervcp\/yolks:nodejs_17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
-        "ghcr.io\/parkervcp\/yolks:nodejs_16": "ghcr.io\/parkervcp\/yolks:nodejs_16",
-        "ghcr.io\/parkervcp\/yolks:nodejs_14": "ghcr.io\/parkervcp\/yolks:nodejs_14"
+        "NodeJS 17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "NodeJS 16": "ghcr.io\/parkervcp\/yolks:nodejs_16",
+        "NodeJS 14": "ghcr.io\/parkervcp\/yolks:nodejs_14"
     },
     "file_denylist": [],
     "startup": "sh .local\/lib\/code-server-{{VERSION}}\/bin\/code-server",
