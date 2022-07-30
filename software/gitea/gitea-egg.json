@@ -23,7 +23,7 @@
     "scripts": {
         "installation": {
             "script": "apt update\r\napt upgrade -y\r\napt install wget -y\r\n\r\ncd \/mnt\/server\r\n\r\nARCHITECTURE=$([[ \"$(uname -m)\" == \"x86_64\" ]] && echo \"amd64\" || echo \"arm64\")\r\n\r\nwget -O gitea https:\/\/dl.gitea.io\/gitea\/main\/gitea-main-linux-${ARCHITECTURE} > \/dev\/null\r\nchmod +x gitea\r\n\r\n#Dir for custom ssh port\r\nmkdir custom\r\n\r\necho \"[server]\r\nLOCAL_ROOT_URL = http:\/\/localhost:${SERVER_PORT}\/\r\nDOMAIN           = ${SERVER_IP}\r\nHTTP_PORT        = ${SERVER_PORT}\r\nDISABLE_SSH      = ${DISABLE_SSH}\r\nSSH_PORT         = ${SSH_PORT}\" > \/mnt\/server\/custom\/app.ini\r\n\r\necho \"Thank for install, kry008\"\r\necho \"Install complete\"",
-            "container": "debian:buster-slim",
+            "container": "debian:bullseye-slim",
             "entrypoint": "bash"
         }
     },
