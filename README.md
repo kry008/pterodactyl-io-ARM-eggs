@@ -10,6 +10,8 @@ Some of them work on ARM and also ARM form Oracle Free Tier
 | [Uptime Kuma](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/uptime-kuma) | [uptime-kuma-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/uptime-kuma/uptime-kuma-egg.json) | ✅ | ✅ | ✅ | Software/Monitoring | - |
 | [Etherpad](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/etherpad) | [etherpad-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/etherpad/etherpad-egg.json) | ✅ | ✅ | ✅ | Software/Documents | __Slow first run__ |
 | [Terraria Vanilla](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/games/terraria-vanilla) | [terraria-vanilla-ARM64-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/games/terraria-vanilla/terraria-vanilla-ARM64-egg.json) | ❌ | ✅ | ✅ | Game | - |
+| [Gitea](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/gitea) | [gitea-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/gitea/gitea-egg.json) | ✅ | ❔[^1] | ✅ | Game | - |
+
 
 
 *Right click and click save  

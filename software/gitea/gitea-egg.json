@@ -1,0 +1,42 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2022-07-30T16:04:25+02:00",
+    "name": "Gitea",
+    "author": "kontakt@kodingwww.ml",
+    "description": "Gitea is an open-source forge software package for hosting software development version control using Git as well as other collaborative features like bug tracking, wikis and code review. It supports self-hosting but also provides a free public first-party instance",
+    "features": null,
+    "docker_images": {
+        "ghcr.io\/parkervcp\/yolks:debian": "ghcr.io\/parkervcp\/yolks:debian"
+    },
+    "file_denylist": [],
+    "startup": ".\/gitea web -p {{SERVER_PORT}} -c .\/app.ini",
+    "config": {
+        "files": "{\r\n    \"custom\/app.ini\": {\r\n        \"parser\": \"file\",\r\n        \"find\": {\r\n            \"SSH_PORT\": \"SSH_PORT: {{server.build.env.SSH_PORT}}\"\r\n        }\r\n    }\r\n}",
+        "startup": "{\r\n    \"done\": \"Listen: \",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "apt update\r\napt upgrade -y\r\napt install wget -y\r\n\r\ncd \/mnt\/server\r\n\r\nARCHITECTURE=$([[ \"$(uname -m)\" == \"x86_64\" ]] && echo \"amd64\" || echo \"arm64\")\r\n\r\nwget -O gitea https:\/\/dl.gitea.io\/gitea\/main\/gitea-main-linux-${ARCHITECTURE} > \/dev\/null\r\nchmod +x gitea\r\n\r\n#Dir for custom ssh port\r\nmkdir custom\r\n\r\necho \"[server]\r\nLOCAL_ROOT_URL = http:\/\/localhost:${SERVER_PORT}\/\r\nDOMAIN           = ${SERVER_IP}\r\nHTTP_PORT        = ${SERVER_PORT}\r\nDISABLE_SSH      = ${DISABLE_SSH}\r\nSSH_PORT         = ${SSH_PORT}\" > \/mnt\/server\/custom\/app.ini\r\n\r\necho \"Thank for install, kry008\"\r\necho \"Install complete\"",
+            "container": "debian:buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "SSH Port",
+            "description": "SSH port displayed in clone URL. YOU HAVE TO ADD SECOND PORT TO THIS SERVER AND PASTE IT HERE",
+            "env_variable": "SSH_PORT",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": false,
+            "rules": "required|integer|between:1024,65535",
+            "field_type": "text"
+        }
+    ]
+}
