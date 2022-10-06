@@ -10,6 +10,7 @@
     "description": "ExpressJS egg, for web server based on NodeJS.\r\n\r\nThis egg use default files from:\r\nhttps:\/\/github.com\/kry008\/pterodactyl-io-ARM-eggs\/tree\/main\/demo-files\/expressjs\r\nAuthor: kry008",
     "features": null,
     "docker_images": {
+        "NodeJS 18": "ghcr.io\/parkervcp\/yolks:nodejs_18",
         "NodeJS 17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
         "NodeJS 16": "ghcr.io\/parkervcp\/yolks:nodejs_16",
         "NodeJS 15": "ghcr.io\/parkervcp\/yolks:nodejs_15",
