@@ -11,6 +11,7 @@ Some of them work on ARM and also ARM form Oracle Free Tier
 | [Etherpad](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/etherpad) | [etherpad-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/etherpad/etherpad-egg.json) | ✅ | ✅ | ✅ | Software/Documents | __Slow first run__ |
 | [Terraria Vanilla](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/games/terraria-vanilla) | [terraria-vanilla-ARM64-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/games/terraria-vanilla/terraria-vanilla-ARM64-egg.json) | ❌ | ✅ | ✅ | Game | - |
 | [Gitea](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/gitea) | [gitea-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/gitea/gitea-egg.json) | ✅ | ✅ | ✅ | Software/Git | - |
+| [whiteboard](https://github.com/kry008/pterodactyl-io-ARM-eggs/tree/main/software/whiteboard) | [whiteboard-egg.json](https://raw.githubusercontent.com/kry008/pterodactyl-io-ARM-eggs/main/software/whiteboard/whiteboard-egg.json) | ✅ | ✅ | ✅ | Software/whiteboard | - |
 
 
 

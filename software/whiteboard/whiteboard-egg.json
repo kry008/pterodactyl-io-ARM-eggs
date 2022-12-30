@@ -1,0 +1,34 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2022-12-30T14:25:21+01:00",
+    "name": "whiteboard",
+    "author": "kontakt@kodingwww.ml",
+    "description": null,
+    "features": null,
+    "docker_images": {
+        "NodeJS 17": "ghcr.io\/parkervcp\/yolks:nodejs_17",
+        "NodeJS 16": "ghcr.io\/parkervcp\/yolks:nodejs_16",
+        "NodeJS 15": "ghcr.io\/parkervcp\/yolks:nodejs_15",
+        "NodeJS 14": "ghcr.io\/parkervcp\/yolks:nodejs_14"
+    },
+    "file_denylist": [],
+    "startup": "cd whiteboard && export PORT={{SERVER_PORT}} && npm i && npm ci && npm run start:prod",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"socketserver running on\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n\r\napt update\r\napt install -y git curl jq file unzip make gcc g++ python python-dev libtool\r\n\r\n\r\ncd \/mnt\/server\r\n\r\ngit clone https:\/\/github.com\/cracker0dks\/whiteboard\r\n\r\n\r\necho -e \"install complete\"\r\n\r\n\r\nexit 0",
+            "container": "node:14-buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": []
+}
